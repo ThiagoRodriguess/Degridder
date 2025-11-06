@@ -1,0 +1,4 @@
+/home/ancloare/container/env_v1/O2_small_32_8_64_s/build/CMakeFiles/casa_wrapper.dir
+/home/ancloare/container/env_v1/O2_small_32_8_64_s/build/CMakeFiles/degridder_pipeline.dir
+/home/ancloare/container/env_v1/O2_small_32_8_64_s/build/CMakeFiles/edit_cache.dir
+/home/ancloare/container/env_v1/O2_small_32_8_64_s/build/CMakeFiles/rebuild_cache.dir

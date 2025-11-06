@@ -1,0 +1,36 @@
+# Memory scripts summary
+- Independent match trees : *2*
+- Total number of buffers in these trees: From 9 to 6 buffers.
+- Total size of these buffers: From 141283104 to 94188736 (33.333333333333336%).
+
+# Match tree optimization log
+## Tree of 6 buffers
+### Original buffer list:
+> [broadcast_config_0.input[304], broadcast_config_0.degridder_0[304], broadcast_config_0.visibility_host_setup_1[304], broadcast_config_0.vis_to_csv_2[304], broadcast_config_0.fft_real_to_complex_3[304], broadcast_config_0.load_image_from_file_4[304]]
+
+### Match application log: 
+- __Step 4 - 1 matches__
+>broadcast_config_0.degridder_0[0..304[=>broadcast_config_0.input[0..304[ 
+- __Step 4 - 1 matches__
+>broadcast_config_0.visibility_host_setup_1[0..304[=>broadcast_config_0.input[0..304[ 
+
+### Tree summary:
+- From 6 buffers to 4 buffers.
+- From 1824 bytes to 1216 bytes (33.333333333333336%)
+
+### Unapplied matches:
+>broadcast_config_0.input[0..304[=>broadcast_config_0.vis_to_csv_2[0..304[, broadcast_config_0.input[0..304[=>broadcast_config_0.fft_real_to_complex_3[0..304[, broadcast_config_0.input[0..304[=>broadcast_config_0.load_image_from_file_4[0..304[, 
+## Tree of 3 buffers
+### Original buffer list:
+> [broadcast_vis_uvw_coords_0.vis_uvw_coords[47093760], broadcast_vis_uvw_coords_0.degridder_0[47093760], broadcast_vis_uvw_coords_0.vis_to_csv_1[47093760]]
+
+### Match application log: 
+- __Step 4 - 1 matches__
+>broadcast_vis_uvw_coords_0.degridder_0[0..47093760[=>broadcast_vis_uvw_coords_0.vis_uvw_coords[0..47093760[ 
+
+### Tree summary:
+- From 3 buffers to 2 buffers.
+- From 141281280 bytes to 94187520 bytes (33.333333333333336%)
+
+### Unapplied matches:
+>broadcast_vis_uvw_coords_0.vis_uvw_coords[0..47093760[=>broadcast_vis_uvw_coords_0.vis_to_csv_1[0..47093760[, 

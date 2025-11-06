@@ -1,0 +1,2 @@
+/cluster_env_papi/llvm-install/bin/llvm-ar qc libcasa_wrapper.a CMakeFiles/casa_wrapper.dir/src/casacore_wrapper.cpp.o
+/cluster_env_papi/llvm-install/bin/llvm-ranlib libcasa_wrapper.a
